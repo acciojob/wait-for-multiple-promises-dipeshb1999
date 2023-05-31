@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.loading {
+  font-style: italic;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.loading:after {
+  content: "...";
+  display: inline-block;
+  animation: dots 1s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+}
